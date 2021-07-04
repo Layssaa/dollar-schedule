@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "name": "Layssa",
+        "dueData": "05/08",
+        "releaseData": "05/11",
+        "accounts": {
+            "aluguel": 325
+        }
+    },
+    {
+        "id": 396,
+        "name": "Layssa",
+        "dueData": "05/08",
+        "releaseData": "05/11",
+        "accounts": {
+            "agua": 50,
+            "aluguel": 400,
+            "alimentação": 300
+        }
+    },
+    {
+        "id": 396,
+        "name": "Layssa",
+        "dueData": "05/08",
+        "releaseData": "05/11",
+        "accounts": {
+            "internet": 50,
+            "escola": 400,
+            "carro": 300
+        }
+    },
+    {
+        "id": 15,
+        "name": "mar",
+        "dueData": "05/08",
+        "releaseData": "05/11",
+        "accounts": {}
+    },
+    {
+        "id": 14,
+        "name": "Luiza",
+        "dueData": "0102",
+        "releaseData": "0101",
+        "accounts": {
+            "cachorro": 150,
+            "casa": 3333333
+        }
+    }
+]

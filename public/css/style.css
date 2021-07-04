@@ -1,0 +1,114 @@
+*{
+    outline: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Lexend', sans-serif;
+    margin: auto;
+}
+
+body {
+    background: #F2F4F5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#screen_login{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+#logo_black{
+    width: 27%;
+    margin-top: -10%;
+}
+
+#body_login{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    background: #DEEDF1;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 222, 237, 241, 0.35 );
+    box-shadow: 0 4px 16px 0 rgba(28, 39, 45, 0.5);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    margin-top: 5%;
+}
+
+#welcome{
+    font-size: 40px;
+    color: #1C272D;
+    margin-bottom: 0%;
+}
+
+#lineMain{
+    height: 0.5px;
+    width: 70%;
+    margin: 4% 0% 4% 0%;
+    background: #00a2d380;
+}
+
+#emailInput, #passwordInput, input{
+    border: 0.5px solid #AEE1EF;
+    margin-bottom: 2%;
+    width: 70%;
+    height: 8%;
+    border-radius: 4px;
+}
+
+input:hover{
+    cursor: text;
+}
+
+input:focus{
+    outline: none;
+}
+
+input::placeholder{
+    opacity: 0.4;
+    padding-left: 3%;
+}
+
+#login_button{
+    background: #00A1D3;
+    font-size: 25px;
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    padding: 1% 13%;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+#login_button:hover{
+    background: #1C272D;
+}
+
+#creaetAccount{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+#creaetAccount:hover{
+    color:#41525c;
+}
+
+#feedbackLogin{
+    color: rgb(196, 4, 4);
+}

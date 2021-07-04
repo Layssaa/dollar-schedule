@@ -1,0 +1,105 @@
+*{
+    outline: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body, html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Lexend', sans-serif;
+    margin: auto;
+}
+
+body {
+    background: #F2F4F5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#newAccount{
+    width: 80%;
+    height: 88%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background: #DEEDF1;
+    border-radius: 20px;
+    margin-top: 1%;
+    background: rgba( 222, 237, 241, 0.35 );
+    box-shadow: 0 4px 16px 0 rgba(28, 39, 45, 0.5);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+input, .spaceInputs{
+    border: 0.5px solid #AEE1EF;
+
+}
+#nameUser, #emailUser, #phoneUser, #passwordUser, .localLab{
+    border:none;
+    width: 40%;
+    height: 8%;
+    border-radius: 4px;
+    cursor: text;
+}
+
+/* input, label{
+} */
+input:focus{
+    outline:none;
+}
+
+#newAccount p{
+    margin: 1% 0 0 5%;
+}
+#accountNumber{
+    font-size: 20px;
+}
+#sectionFunctionality{
+    font-size: 40px;
+    color: #1C272D;
+}
+#questionsUser{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+#questionsUser:p , #questionsUser:label {
+    margin: 1%;
+}
+
+#registerUser{
+    background: #00A1D3;
+    color: #FFFFFF;
+    border: none;
+    font-size: 23px;
+    width: 20%;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+    margin-bottom: 1%;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+}
+
+#registerUser:hover{
+    background: #1C272D;
+}
+
+#feedbackRegister {
+    margin: 0;
+    color: rgb(1, 80, 21);
+}
+#buttonsActions{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}

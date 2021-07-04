@@ -1,0 +1,93 @@
+*{
+    outline: none;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-size: 25px; */
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Lexend', sans-serif;
+    margin: auto;
+}
+
+body {
+    background: #F2F4F5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#newExpenseScreen{
+    width: 80%;
+    height: 88%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background: #DEEDF1;
+    border-radius: 20px;
+    margin-top: 1%;
+    background: rgba( 222, 237, 241, 0.35 );
+    box-shadow: 0 4px 16px 0 rgba(28, 39, 45, 0.5);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#registerNewExpense{
+    font-size: 40px;
+    margin: 0% 0% 5% 5%;
+}
+#bodyReqExpense{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    margin-left: 10%;
+}
+
+#logoCompany{
+    width: 10%;
+    position: absolute;
+    margin: 0% 0% 30% 85% ;
+    opacity: 0.8;
+}
+
+#expenseValue, #expenseCategory, #expenseDataVen, #expenseDataLan{
+    border: 0.5px solid #AEE1EF;
+    margin-bottom: 2%;
+    width: 45%;
+    height: 60%;
+    border-radius: 4px;
+}
+
+#registerExpense{
+    background: #00A1D3;
+    color: #FFFFFF;
+    border: none;
+    font-size: 23px;
+    width: 20%;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: center;
+    margin-bottom: 1%;
+    padding: 0.5% 0.5% 0.5% 0.5%;
+}
+
+#registerExpense:hover{
+    background: #1C272D;
+}
+.namesOnAccounts{
+    font-size: 25px;
+}
+
+#buttonActionsExpenses {
+    display: flex;
+    justify-content: space-evenly;
+}
+#feedbackregisterExpense{
+    font-size: 30px;
+    color: rgb(1, 80, 21);
+}

@@ -1,0 +1,87 @@
+*{
+    outline: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Lexend', sans-serif;
+    margin: auto;
+}
+
+body {
+    background: #F2F4F5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#profileUser{
+    width: 80%;
+    height: 88%;
+    display: none;
+    justify-content: center;
+    align-self: center;
+    background: #DEEDF1;
+    border-radius: 20px;
+    margin-top: 1%;
+    background: rgba( 222, 237, 241, 0.35 );
+    box-shadow: 0 4px 16px 0 rgba(28, 39, 45, 0.5);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+/* --------------------------------------------------------------------------------------- */
+#bodySpace{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#greetings{
+    font-size: 40px;
+    margin: -15% 0 0 10%;
+}
+#interaction, #buttonSpace{
+    font-size: 25px;
+    margin: -15% 0 0 10%;;
+}
+
+#buttonSpace button{
+        background: #00A1D3;
+        font-size: 25px;
+        border: none;
+        border-radius: 6px;
+        color: #FFFFFF;
+        padding: 1% 13%;
+        margin-top: 3%;
+        cursor: pointer;
+        width: 55%;
+    
+}
+#buttonSpace button:hover{
+    background: #1C272D;
+}
+
+#profileImag{
+    width: 30% ;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#profileAccount{
+    position: absolute;
+    width: 4%;
+    margin: 15% 0 0 65%;
+    cursor: pointer;
+}
+
+img{
+    width: 50%;
+    border-radius: 20%;
+    margin-top: 10%;
+}

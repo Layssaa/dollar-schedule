@@ -1,0 +1,84 @@
+*{
+    outline: none;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    font-family: 'Lexend', sans-serif;
+    margin: auto;
+}
+
+body {
+    background: #F2F4F5;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+#profileUpdate{
+    width: 80%;
+    height: 88%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background: #DEEDF1;
+    border-radius: 20px;
+    margin-top: 1%;
+    background: rgba( 222, 237, 241, 0.35 );
+    box-shadow: 0 4px 16px 0 rgba(28, 39, 45, 0.5);
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#name_User{
+    font-size: 40px;
+    height: 15%;
+    margin-top: 4%;
+    margin-left: 9%;
+}
+#dadosSpace{
+    height: 82%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    justify-content: space-evenly;
+}
+.categoryInfo, #dadosUser{
+    font-size: 25px;
+}
+#dadosUser{
+    margin-bottom: 0.5%;
+}
+.spaceUpdateInfo{
+    border: 0.5px solid #AEE1EF;
+    margin-left: 1%;
+    margin-bottom: 2%;
+    width: 30%;
+    height:60%;
+    border-radius: 4px;
+}
+#spaceUpdateUserButton{
+    display: flex;
+    justify-content: space-evenly;
+}
+.buttonsActionUpdateUser{
+    /* width: 20%; */
+    background: #00A1D3;
+    font-size: 25px;
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    padding: 0.5% 5%;
+    margin-top: 3%;
+    cursor: pointer;
+    text-align: center;
+}
+.buttonsActionUpdateUser:hover{
+    background: #1C272D;
+}

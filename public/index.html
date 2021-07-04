@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/userScreen.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/accounts.css">
+    <link rel="stylesheet" href="./css/newExpense.css">
+    <link rel="stylesheet" href="./css/updateProfile.css">
+    <link rel="stylesheet" href="./css/accountsScreen.css">
+
+</head>
+
+<body>
+
+    <!-- ---------------------------------------------- LOGIN -------------------------------------------------- -->
+    <main id="screen_login">
+        <img id="logo_black" src="./images/logo_black.svg">
+        <div id="body_login">
+            <p id="welcome">Bem-vindo(a)!</p>
+            <div id="lineMain"></div>
+            <input id="emailInput" type="text" placeholder="insira o email">
+            <input id="passwordInput" type="password" placeholder="insira a senha">
+            <button id="login_button" onclick="loginUser()">LOGIN</button>
+            <p id="creaetAccount" onclick="changePage(0,1)">criar conta</p>
+            <p id="feedbackLogin"></p>
+        </div>
+    </main>
+    <!-- ----------------------------------------------- NOVA CONTA ------------------------------------------------- -->
+    <main id="newAccount">
+        <p id="sectionFunctionality"> Cadastrar novo usuário.</p>
+        <div id="questionsUser">
+            <label for="nameUser">Nome</label>
+            <input class="spaceInputs" id="nameUser" type="text">
+            <label for="emailUser">Email</label>
+            <input class="spaceInputs" id="emailUser" type="text">
+            <label for="phoneUser">Telefone</label>
+            <input class="spaceInputs" id="phoneUser" type="number">
+            <label for="passwordUser">Senha</label>
+            <input class="spaceInputs" id="passwordUser" type="password">
+            <p id="feedbackRegister"></p>
+        </div>
+        <div id="buttonsActions">
+            <button type="button" id="registerUser" onclick="registerUser()">Cadastrar</button>
+            <button type="button" id="backLoginPage" onclick="changePage(1,0)">Voltar</button>
+        </div>
+
+
+        <!-- <img id="c" src="./images/logo_black.svg" alt=""> -->
+    </main>
+    <!-- ------------------------------------------ PERFIL USUÁRIO ------------------------------------------------------ -->
+
+    <main id="profileUser">
+        <div id="bodySpace">
+            <p id="greetings">Bem-vindo(a) </p>
+            <p id="interaction">Como podemos te ajudar hoje?</p>
+            <div id="buttonSpace">
+                <button onclick="historyShow()">Despesas feitas</button>
+                <button onclick="changePage(2,4)">Novas despesas</button>
+                <button id="deleteAccount" onclick="deleteAccount()">Excluir conta</button>
+
+
+            </div>
+        </div>
+        <div id="profileImag">
+            <img src="./images/profile_1.jpg">
+        </div>
+        <!-- position absolute -->
+        <img id="profileAccount" src="./images/profile_Icon.png" onclick="viewProfile()">
+    </main>
+    <!-- ------------------------------------------ HISTORICO USUÁRIO ----------------------------------- -->
+
+    <main id="accountScreen">
+        <div id="expenseAccounts">
+            <div id="accountInfo">
+                <div id="expenseName">
+                    <p id="expenseHistory">Histórico de despesas</p>
+                </div>
+                <div id="tableNames">
+                </div>
+                <div id="expenseSpace"></div>
+            </div>
+            <div id="spaceImg">
+                <img id="profilePicture" src="./images/profile_1.jpg">
+            </div>
+        </div>
+        <div id="accountButtonSpace">
+            <button class="buttonsAccounts">Adicionar</button>
+            <button class="buttonsAccounts">Negociar</button>
+            <button class="buttonsAccounts" id="buttonAccountBack" onclick="changePage(3,2)">Voltar</button>
+        </div>
+    </main>
+    <!-- ------------------------------------------ NOVA DESPESA ----------------------------------- -->
+    <main id="newExpenseScreen">
+        <p id="registerNewExpense">Cadastrar nova despesa</p>
+        <div id="bodyReqExpense">
+            <p id="feedbackregisterExpense"> </p>
+            <p class="namesOnAccounts">Nº 207</p>
+            <div id="spaceValueExpense">
+                <label class="namesOnAccounts"  for="expenseValue">Valor:</label> <input type="number" min="00"id="expenseValue" type="text">
+            </div>
+            <div id="spaceCategoryExpense">
+                <label class="namesOnAccounts" for="expenseCategory">Categoria:</label> <input id="expenseCategory"
+                    type="text">
+            </div>
+            <div id="spaceDataVenExpense">
+                <label class="namesOnAccounts" for="expenseDataVen">Data de vencimento:</label> <input
+                    id="expenseDataVen" type="text">
+            </div>
+            <div id="spaceDataLanExpense">
+                <label class="namesOnAccounts" for="expenseDataLan">Data de lançamento:</label> <input
+                    id="expenseDataLan" type="text">
+            </div>
+
+        </div>
+        <div id="buttonActionsExpenses">
+            <button type="button" id="registerExpense"
+                onclick="sendExpenses(expenseValue.value,expenseCategory.value, expenseDataVen.value, expenseDataLan.value )">Cadastrar</button>
+            <button type="button" id="registerUser" onclick="changePage(4,2)">Voltar</button>
+        </div>
+        <img id="logoCompany" src="./images/logo_black.svg">
+    </main>
+    <!-- ------------------------------------------ ATUALIZAR USUÁRIO ----------------------------------- -->
+    <main id="profileUpdate">
+        <p id="name_User">Layssa</p>
+        <div id="dadosSpace">
+            <p id="dadosUser">Dados</p>
+            <label class="categoryInfo" for="phoneUserUpdate">Telefone:<input class="spaceUpdateInfo" type="text"
+                    id="phoneUserUpdate"></label>
+            <label class="categoryInfo" for="emailUserUpdate">Email:<input class="spaceUpdateInfo" type="text"
+                    id="emailUserUpdate"></label>
+            <label class="categoryInfo" for="passwordUserUpdate">Senha<input class="spaceUpdateInfo" type="password"
+                    id="passwordUserUpdate"></label>
+            <div id="spaceUpdateUserButton">
+                <button class="buttonsActionUpdateUser" onclick="updateDataUser(phoneUserUpdate.value,emailUserUpdate.value,passwordUserUpdate.value)">Atualizar</button>
+                <button class="buttonsActionUpdateUser" onclick="changePage(5,2)">Voltar</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<script src="./script/script.js"></script>
+<script src="./script/registerUser.js"></script>
+
+</html>
